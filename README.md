@@ -8,6 +8,7 @@ Planned Goals
 
 Inspiration:
 Python Wrapper - https://github.com/RomelTorres/alpha_vantage
+
 C++ Wrapper using Libcurl for Linux- https://github.com/AvapiDotNet/AvapiCpp
 
 References:
