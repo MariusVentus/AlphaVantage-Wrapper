@@ -33,9 +33,6 @@ namespace AVW{
 		csv
 	};
 
-
-	std::wstring GetKey(void);
-
 	//Main TimeSeries (TS) Call
 	std::wstring TimeSeries(TimeSeriesFunction inFunc, const std::wstring& inSymbol, TimeSeriesInterval inInterval, TimeSeriesOutputSize inOutputSize, TimeSeriesDataType inDataType);
 	//Quick TS Call

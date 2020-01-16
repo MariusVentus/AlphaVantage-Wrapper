@@ -1,8 +1,23 @@
 #include "GetFunctions.h"
+#include <fstream>
 #pragma comment(lib, "windowsapp")
 #include <winrt/Windows.Foundation.h>
 #include <winrt/Windows.Web.Http.Headers.h>
 
+
+std::wstring AVW::GetKey(void)
+{
+	std::wifstream in("AlphaVantageKey/Key.txt");
+	if (in) {
+		std::wstring key;
+		std::getline(in, key);
+
+		return key;
+	}
+	else {
+		return L"demo";
+	}
+}
 
 std::wstring AVW::GetToString(const std::wstring& input)
 {

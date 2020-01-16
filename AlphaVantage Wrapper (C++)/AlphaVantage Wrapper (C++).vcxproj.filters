@@ -13,6 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="AlphaVantageKey">
+      <UniqueIdentifier>{348e84ac-76e3-4bf9-98a9-8558a390aed1}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -37,5 +40,10 @@
     <None Include="..\README.md">
       <Filter>Resource Files</Filter>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="AlphaVantageKey\Key.txt">
+      <Filter>AlphaVantageKey</Filter>
+    </Text>
   </ItemGroup>
 </Project>

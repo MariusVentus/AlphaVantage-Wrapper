@@ -1,10 +1,6 @@
 #include "AVW_StockTimeSeries.h"
 #include "GetFunctions.h"
 
-std::wstring AVW::GetKey(void)
-{
-	return L"demo";
-}
 
 std::wstring AVW::TimeSeries(TimeSeriesFunction inFunc, const std::wstring& inSymbol, TimeSeriesInterval inInterval, TimeSeriesOutputSize inOutputSize, TimeSeriesDataType inDataType)
 {
