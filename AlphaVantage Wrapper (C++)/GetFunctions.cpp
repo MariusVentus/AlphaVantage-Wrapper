@@ -7,15 +7,25 @@
 
 std::wstring AVW::GetKey(void)
 {
-	std::wifstream in("AlphaVantageKey/Key.txt");
-	if (in) {
-		std::wstring key;
-		std::getline(in, key);
-
-		return key;
+	//Check if AlphaVantageKey variable is set, and if not, check AlphaVantageKey/Key.txt file for a key.
+	if (AlphaVantageKey == L"demo") {
+		std::wifstream in("AlphaVantageKey/Key.txt");
+		//Check if file exists
+		if (in) {
+			std::wstring fileKey = L"";
+			std::getline(in, fileKey);
+			//Verify read "succesful"
+			if (fileKey == L"") {
+				return AlphaVantageKey;
+			}
+			return fileKey;
+		}
+		else {
+			return AlphaVantageKey;
+		}
 	}
 	else {
-		return L"demo";
+		return AlphaVantageKey;
 	}
 }
 
