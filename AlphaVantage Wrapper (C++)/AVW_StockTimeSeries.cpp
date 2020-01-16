@@ -6,7 +6,7 @@ std::wstring AVW::GetKey(void)
 	return L"demo";
 }
 
-std::string AVW::TimeSeries(TimeSeriesFunction inFunc, const std::wstring& inSymbol, TimeSeriesInterval inInterval, TimeSeriesOutputSize inOutputSize, TimeSeriesDataType inDataType)
+std::wstring AVW::TimeSeries(TimeSeriesFunction inFunc, const std::wstring& inSymbol, TimeSeriesInterval inInterval, TimeSeriesOutputSize inOutputSize, TimeSeriesDataType inDataType)
 {
 	std::wstring baseString = L"https://www.alphavantage.co/query?";
 	
@@ -98,37 +98,37 @@ std::string AVW::TimeSeries(TimeSeriesFunction inFunc, const std::wstring& inSym
 
 //OVERLOADS-------------------------------------------------------------------------
 //Quick TS Call
-std::string AVW::TimeSeries(TimeSeriesFunction inFunc, const std::wstring & inSymbol)
+std::wstring AVW::TimeSeries(TimeSeriesFunction inFunc, const std::wstring & inSymbol)
 {
 	return TimeSeries(inFunc, inSymbol, none, compact, json);
 }
 //Quick TS Call with Intervals
-std::string AVW::TimeSeries(TimeSeriesFunction inFunc, const std::wstring & inSymbol, TimeSeriesInterval inInterval)
+std::wstring AVW::TimeSeries(TimeSeriesFunction inFunc, const std::wstring & inSymbol, TimeSeriesInterval inInterval)
 {
 	return TimeSeries(inFunc, inSymbol, inInterval, compact, json);
 }
 
-std::string AVW::TimeSeries(TimeSeriesFunction inFunc, const std::wstring & inSymbol, TimeSeriesInterval inInterval, TimeSeriesOutputSize inOutputSize)
+std::wstring AVW::TimeSeries(TimeSeriesFunction inFunc, const std::wstring & inSymbol, TimeSeriesInterval inInterval, TimeSeriesOutputSize inOutputSize)
 {
 	return TimeSeries(inFunc, inSymbol, inInterval, inOutputSize, json);
 }
 
-std::string AVW::TimeSeries(TimeSeriesFunction inFunc, const std::wstring & inSymbol, TimeSeriesInterval inInterval, TimeSeriesDataType inDataType)
+std::wstring AVW::TimeSeries(TimeSeriesFunction inFunc, const std::wstring & inSymbol, TimeSeriesInterval inInterval, TimeSeriesDataType inDataType)
 {
 	return TimeSeries(inFunc, inSymbol, inInterval, compact, inDataType);
 }
 //Quick TS Call, no Intervals
-std::string AVW::TimeSeries(TimeSeriesFunction inFunc, const std::wstring & inSymbol, TimeSeriesOutputSize inOutputSize, TimeSeriesDataType inDataType)
+std::wstring AVW::TimeSeries(TimeSeriesFunction inFunc, const std::wstring & inSymbol, TimeSeriesOutputSize inOutputSize, TimeSeriesDataType inDataType)
 {
 	return TimeSeries(inFunc, inSymbol, none, inOutputSize, inDataType);
 }
 
-std::string AVW::TimeSeries(TimeSeriesFunction inFunc, const std::wstring & inSymbol, TimeSeriesOutputSize inOutputSize)
+std::wstring AVW::TimeSeries(TimeSeriesFunction inFunc, const std::wstring & inSymbol, TimeSeriesOutputSize inOutputSize)
 {
 	return TimeSeries(inFunc, inSymbol, none, inOutputSize, json);
 }
 
-std::string AVW::TimeSeries(TimeSeriesFunction inFunc, const std::wstring & inSymbol, TimeSeriesDataType inDataType)
+std::wstring AVW::TimeSeries(TimeSeriesFunction inFunc, const std::wstring & inSymbol, TimeSeriesDataType inDataType)
 {
 	return TimeSeries(inFunc, inSymbol, none, compact, inDataType);
 }
@@ -136,7 +136,7 @@ std::string AVW::TimeSeries(TimeSeriesFunction inFunc, const std::wstring & inSy
 
 
 //Search Endpoint
-std::string AVW::SearchEndpoint(const std::wstring inKeywords, TimeSeriesDataType inDataType)
+std::wstring AVW::SearchEndpoint(const std::wstring inKeywords, TimeSeriesDataType inDataType)
 {
 	std::wstring baseString = L"https://www.alphavantage.co/query?function=SYMBOL_SEARCH&keywords=";
 

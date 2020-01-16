@@ -2,8 +2,12 @@
 #include <iostream>
 
 int main() {
+	
+	std::wcout << AVW::SearchEndpoint(L"Micro");
 
-	std::cout << AVW::TimeSeries(AVW::Intraday, L"MSFT");
+	std::cin.get();
+
+	std::wcout << AVW::TimeSeries(AVW::Intraday, L"MSFT");
 
 	std::cin.get();
 	return 0;

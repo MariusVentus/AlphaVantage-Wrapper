@@ -37,19 +37,19 @@ namespace AVW{
 	std::wstring GetKey(void);
 
 	//Main TimeSeries (TS) Call
-	std::string TimeSeries(TimeSeriesFunction inFunc, const std::wstring& inSymbol, TimeSeriesInterval inInterval, TimeSeriesOutputSize inOutputSize, TimeSeriesDataType inDataType);
+	std::wstring TimeSeries(TimeSeriesFunction inFunc, const std::wstring& inSymbol, TimeSeriesInterval inInterval, TimeSeriesOutputSize inOutputSize, TimeSeriesDataType inDataType);
 	//Quick TS Call
-	std::string TimeSeries(TimeSeriesFunction inFunc, const std::wstring& inSymbol);
+	std::wstring TimeSeries(TimeSeriesFunction inFunc, const std::wstring& inSymbol);
 	//Quick TS Call with Intervals
-	std::string TimeSeries(TimeSeriesFunction inFunc, const std::wstring& inSymbol, TimeSeriesInterval inInterval);
-	std::string TimeSeries(TimeSeriesFunction inFunc, const std::wstring& inSymbol, TimeSeriesInterval inInterval, TimeSeriesOutputSize inOutputSize);
-	std::string TimeSeries(TimeSeriesFunction inFunc, const std::wstring& inSymbol, TimeSeriesInterval inInterval, TimeSeriesDataType inDataType);
+	std::wstring TimeSeries(TimeSeriesFunction inFunc, const std::wstring& inSymbol, TimeSeriesInterval inInterval);
+	std::wstring TimeSeries(TimeSeriesFunction inFunc, const std::wstring& inSymbol, TimeSeriesInterval inInterval, TimeSeriesOutputSize inOutputSize);
+	std::wstring TimeSeries(TimeSeriesFunction inFunc, const std::wstring& inSymbol, TimeSeriesInterval inInterval, TimeSeriesDataType inDataType);
 	//Quick TS Call, no Intervals
-	std::string TimeSeries(TimeSeriesFunction inFunc, const std::wstring& inSymbol, TimeSeriesOutputSize inOutputSize, TimeSeriesDataType inDataType);
-	std::string TimeSeries(TimeSeriesFunction inFunc, const std::wstring& inSymbol, TimeSeriesOutputSize inOutputSize);
-	std::string TimeSeries(TimeSeriesFunction inFunc, const std::wstring& inSymbol, TimeSeriesDataType inDataType);
-
-
-	std::string SearchEndpoint(const std::wstring inKeywords, TimeSeriesDataType inDataType = json);
+	std::wstring TimeSeries(TimeSeriesFunction inFunc, const std::wstring& inSymbol, TimeSeriesOutputSize inOutputSize, TimeSeriesDataType inDataType);
+	std::wstring TimeSeries(TimeSeriesFunction inFunc, const std::wstring& inSymbol, TimeSeriesOutputSize inOutputSize);
+	std::wstring TimeSeries(TimeSeriesFunction inFunc, const std::wstring& inSymbol, TimeSeriesDataType inDataType);
+		 
+		 
+	std::wstring SearchEndpoint(const std::wstring inKeywords, TimeSeriesDataType inDataType = json);
 
 }
