@@ -2,7 +2,9 @@
 A quick wrapper for AlphaVantage using C++17's Windows 10 features.
 
 Features
-Reads Key from AlphaVantageKey/Key.txt file, for from a variable in the GetFunctions Header.
+>Reads Key from AlphaVantageKey/Key.txt file, for from a variable in the GetFunctions Header.
+
+>Functions made for all Stock Time Series and Foreign Exchange Calls.
 
 Planned Features
 

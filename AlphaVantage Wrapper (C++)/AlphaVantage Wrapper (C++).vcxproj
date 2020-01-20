@@ -124,15 +124,20 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="AVW_ForEx.cpp" />
     <ClCompile Include="AVW_StockTimeSeries.cpp" />
     <ClCompile Include="GetFunctions.cpp" />
     <ClCompile Include="Main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AVW_Enums.h" />
+    <ClInclude Include="AVW_ForEx.h" />
     <ClInclude Include="AVW_StockTimeSeries.h" />
     <ClInclude Include="GetFunctions.h" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="..\.gitignore" />
+    <None Include="..\LICENSE" />
     <None Include="..\README.md" />
   </ItemGroup>
   <ItemGroup>

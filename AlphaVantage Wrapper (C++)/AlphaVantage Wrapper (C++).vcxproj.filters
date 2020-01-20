@@ -27,6 +27,9 @@
     <ClCompile Include="GetFunctions.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="AVW_ForEx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GetFunctions.h">
@@ -35,9 +38,21 @@
     <ClInclude Include="AVW_StockTimeSeries.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="AVW_ForEx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AVW_Enums.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\README.md">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\LICENSE">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\.gitignore">
       <Filter>Resource Files</Filter>
     </None>
   </ItemGroup>
